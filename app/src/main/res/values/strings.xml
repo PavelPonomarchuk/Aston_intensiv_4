@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aston_intensiv_4</string>
+    <string name="main_button_black_label">Black</string>
+    <string name="main_button_colored_label">Colored</string>
+    <string name="main_equalize_button_label">Equalize</string>
+    <string name="main_customize_button_label">Customize</string>
+</resources>

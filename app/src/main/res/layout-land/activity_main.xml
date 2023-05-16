@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ru.ponomarchukpn.aston_intensiv_4.AnalogueClockView
+        android:id="@+id/clock_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:base_color="@color/base_gray"
+        app:hour_color="@color/red"
+        app:hour_percent="0.55"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:minute_color="@color/green"
+        app:minute_percent="0.7"
+        app:second_color="@color/blue"
+        app:second_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_button_black"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_button_ripple"
+        android:text="@string/main_button_black_label"
+        android:textSize="@dimen/main_button_text_size"
+        app:layout_constraintBottom_toTopOf="@id/main_button_equalize"
+        app:layout_constraintEnd_toStartOf="@id/main_button_colored"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_button_colored"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_button_ripple"
+        android:text="@string/main_button_colored_label"
+        android:textSize="@dimen/main_button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/main_button_black"
+        app:layout_constraintTop_toTopOf="@id/main_button_black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_button_equalize"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_button_ripple"
+        android:text="@string/main_equalize_button_label"
+        android:textSize="@dimen/main_button_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/main_button_customize"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/main_button_black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_button_customize"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_button_ripple"
+        android:text="@string/main_customize_button_label"
+        android:textSize="@dimen/main_button_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/main_button_equalize"
+        app:layout_constraintTop_toTopOf="@id/main_button_equalize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

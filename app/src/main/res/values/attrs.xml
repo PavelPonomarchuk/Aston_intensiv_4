@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnalogueClockView">
+        <attr name="base_color" format="color" />
+        <attr name="hour_color" format="color" />
+        <attr name="minute_color" format="color" />
+        <attr name="second_color" format="color" />
+        <attr name="hour_percent" format="float" />
+        <attr name="minute_percent" format="float" />
+        <attr name="second_percent" format="float" />
+    </declare-styleable>
+</resources>
